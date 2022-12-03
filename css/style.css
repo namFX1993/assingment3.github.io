@@ -1,0 +1,353 @@
+* {
+  margin: 0px;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.bg-eee {
+  background-color: #eee;
+}
+.hidden {
+  display: none;
+}
+/* lỗi email */
+.error {
+  color: red !important;
+}
+:root {
+  --primary-color: #0d6efd;
+}
+.container {
+  max-width: 1200px !important;
+}
+
+/* CSS Banner image */
+#banner {
+  position: relative;
+}
+
+/* CSS Banner Text */
+.banner-text {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+/* CSS Avatar */
+img.avt {
+  position: absolute;
+  margin: auto;
+  top: 79%;
+  left: 44.5%;
+  width: 150px;
+  height: auto;
+  box-sizing: border-box;
+  border: 8px solid white;
+  border-radius: 50%;
+}
+
+/* CSS job-info */
+/* grid job info */
+#job-info .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 540px, 400px;
+  column-gap: 24px;
+}
+
+/* css viewmore */
+a.view {
+  position: absolute;
+  top: auto;
+  left: auto;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  background-color: rgb(238, 223, 13);
+  border-radius: 50px;
+  padding: 3px 5px;
+}
+a.active {
+  position: absolute;
+  top: auto;
+  left: auto;
+}
+
+.view::before {
+  content: "View More ▼";
+}
+a.active.view::before {
+  content: "View Less ▲";
+}
+.exp .ex-time span {
+  background-color: var(--primary-color);
+  padding: 2px 5px;
+  border-radius: 3px;
+  color: white;
+}
+.ic-toolbox,
+.ic-pencil,
+.ic-telescope,
+.ic-mic,
+.ic-tools-2 {
+  font-size: 50px !important;
+}
+.ic-megaphone,
+.ic-strategy,
+.ic-hotairballoon,
+.ic-basket {
+  font-size: 30px !important;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* CSS marker */
+.exp ::marker,
+.education ::marker,
+.activity ::marker {
+  color: #0d6efd;
+  font-size: 20px;
+}
+/* css ngôn ngữ */
+.lang-label {
+  margin-left: 20px;
+}
+.language ul {
+  list-style: none;
+  padding-bottom: 20px;
+}
+.language ul li {
+  display: inline-block;
+}
+
+/* tạo thanh phía dưới tiếng anh */
+.t-a ul li {
+  position: relative;
+}
+.language .t-a ul li:first-child:after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 0px;
+  left: -10px;
+}
+.language .t-a ul li:nth-child(2)::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 0px;
+  left: 70px;
+}
+.language .t-a ul li:last-child:after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: gray;
+  position: absolute;
+  top: 0px;
+  left: 150px;
+}
+
+/* tạo thanh phía dưới tiếng nhật*/
+.t-n ul li {
+  position: relative;
+}
+.language .t-n ul li:first-child:after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 0px;
+  left: -10px;
+}
+.language .t-n ul li:nth-child(2)::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: gray;
+  position: absolute;
+  top: 0px;
+  left: 70px;
+}
+.language .t-n ul li:last-child:after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: gray;
+  position: absolute;
+  top: 0px;
+  left: 150px;
+}
+/* CSS kỹ năng */
+.skill-label {
+  padding-left: 20px;
+}
+.skill ul {
+  list-style: none;
+  padding-bottom: 40px;
+}
+.skill ul li {
+  display: inline;
+}
+
+/* CSS tạo thanh kỹ năng html/css */
+.skill-html ul li {
+  position: relative;
+}
+.skill-html ul li:first-child::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 20px;
+  left: -10px;
+}
+.skill-html ul li:nth-child(2)::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: gray;
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+.skill-html ul li:last-child::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: gray;
+  position: absolute;
+  top: 20px;
+  left: 150px;
+}
+
+/* CSS tạo thanh kỹ năng javascript */
+.skill-js ul li {
+  position: relative;
+}
+.skill-js ul li:first-child::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 20px;
+  left: -10px;
+}
+.skill-js ul li:nth-child(2)::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+.skill-js ul li:last-child::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: gray;
+  position: absolute;
+  top: 20px;
+  left: 150px;
+}
+/* CSS tạo thanh kỹ năng nodejs*/
+.skill-nodejs ul li {
+  position: relative;
+}
+.skill-nodejs ul li:first-child::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 20px;
+  left: -10px;
+}
+.skill-nodejs ul li:nth-child(2)::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+.skill-nodejs ul li:last-child::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: gray;
+  position: absolute;
+  top: 20px;
+  left: 150px;
+}
+/* CSS tạo thanh kỹ năng bootstrap5 */
+.skill-bootstrap5 ul li {
+  position: relative;
+}
+.skill-bootstrap5 ul li:first-child::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 20px;
+  left: -10px;
+}
+.skill-bootstrap5 ul li:nth-child(2)::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: gray;
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+.skill-bootstrap5 ul li:last-child::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: gray;
+  position: absolute;
+  top: 20px;
+  left: 150px;
+}
+/* CSS chứng chỉ */
+#certificate img {
+  width: 200px;
+  height: auto;
+}
+#certificate .row2 {
+  border-top: 1px solid #d6c08d;
+}
+.certi-web {
+  border-right: 1px solid #d6c08d;
+}
+
+/* CSS Dự án */
+.project-img {
+  border: none !important;
+  padding: 0px !important;
+}
+span.project-time {
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: var(--primary-color);
+}

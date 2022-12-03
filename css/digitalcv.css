@@ -1,0 +1,20 @@
+/* CSS project charter */
+.bg-grey {
+  background: #f7f7f7;
+  max-width: 1110px;
+  margin: auto;
+}
+
+.pc-detail {
+  border-bottom: 1px dashed #0bc5dd;
+  padding-right: 5px;
+}
+
+span.timeline-number {
+  font-size: large;
+  color: white;
+  background-color: #b290f1;
+  padding: 7px 7px;
+  border-radius: 50%;
+  border: 1px solid #e28307;
+}

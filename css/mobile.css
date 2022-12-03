@@ -1,0 +1,36 @@
+@media screen and (max-width: 767px) {
+  /* banner text */
+  .banner-text {
+    font-size: 20px !important;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+  }
+  /* bỏ border navbar */
+  li.nav-item {
+    border: none !important;
+  }
+  /* job info */
+  #job-info .container {
+    display: block;
+  }
+  /* chứng chỉ */
+  #certificate {
+    text-align: center;
+  }
+  #certificate img {
+    max-width: 400px;
+    height: auto;
+  }
+  #certificate .row2 {
+    border-top: 1px solid #d6c08d;
+  }
+  .certi-web {
+    padding-bottom: 40px;
+    border-right: none;
+    border-bottom: 1px solid #d6c08d;
+  }
+  .certi-js {
+    padding-top: 40px;
+  }
+}
